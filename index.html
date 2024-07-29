@@ -8,9 +8,13 @@
         margin: 0;
         padding: 0;
         line-height: 1.6;
+        background: url('https://github.com/tedalcorn/dogs/blob/main/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        color: #333;
       }
       header {
-        background: #333;
+        background: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
         color: #fff;
         padding: 1rem 0;
         text-align: center;
@@ -20,6 +24,8 @@
         margin: auto;
         overflow: hidden;
         padding: 20px;
+        background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for better readability */
+        border-radius: 8px;
       }
       img {
         max-width: 100%;
@@ -45,6 +51,16 @@
       }
       ul li {
         margin-bottom: 10px;
+      }
+      .chart-container {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .chart-container img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        margin: 10px;
       }
     </style>
   </head>
@@ -90,6 +106,14 @@
       
       <!-- Replace with actual iframe source if needed -->
       <iframe width='100%' height='600px' src="MAP_OR_STATISTICS_URL_HERE" title="Map and Statistics"></iframe>
+      
+      <!-- Display charts -->
+      <div class="chart-container">
+        <img src="https://github.com/tedalcorn/dogs/blob/main/daysinshelter.jpg" alt="Days in Shelter">
+        <img src="https://github.com/tedalcorn/dogs/blob/main/dogage.jpg" alt="Dog Age Distribution">
+        <img src="https://github.com/tedalcorn/dogs/blob/main/topbreeds.jpg" alt="Top Breeds">
+        <img src="https://github.com/tedalcorn/dogs/blob/main/topnames.jpg" alt="Top Names">
+      </div>
     </div>
   </body>
 </html>
