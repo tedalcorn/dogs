@@ -8,10 +8,11 @@
         margin: 0;
         padding: 0;
         line-height: 1.6;
-        background: url('https://github.com/tedalcorn/dogs/blob/main/background.jpg') no-repeat center center fixed;
+        background: url('https://raw.githubusercontent.com/tedalcorn/dogs/main/background.jpg') no-repeat center center fixed;
         background-size: cover;
         position: relative;
         color: #333;
+        background-color: #f0f0f0; /* Fallback background color */
       }
       header {
         background: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
@@ -61,6 +62,8 @@
         height: auto;
         display: inline-block;
         margin: 10px;
+        width: 500px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
       }
     </style>
   </head>
@@ -93,26 +96,18 @@
         <li>Most dogs have been in the shelter less than 50 days. There are some extreme outliers (in shelter more than 3 years) but that may be due to lack of updating by the shelter.</li>
       </ul>
       
-      <!-- Replace with actual image URL -->
-      <img src="IMAGE_URL_HERE" alt="Description of the image">
-      
-      <p>I will provide some image files shortly.</p>
-      
       <!-- Replace with actual Python file link -->
-      <p>Here is the Python file used for scraping and cleaning the data: <b><a href="PYTHON_FILE_LINK_HERE">See Python file</a></b></p>
-      
-      <!-- Add title above the iframe -->
-      <div class="map-title">Map and Statistics of Dogs Available for Adoption</div>
+      <p>My code <b><a href="PYTHON_FILE_LINK_HERE">is here</a></b>.</p>
       
       <!-- Replace with actual iframe source if needed -->
       <iframe width='100%' height='600px' src="MAP_OR_STATISTICS_URL_HERE" title="Map and Statistics"></iframe>
       
       <!-- Display charts -->
       <div class="chart-container">
-        <img src="https://github.com/tedalcorn/dogs/blob/main/daysinshelter.jpg" alt="Days in Shelter">
-        <img src="https://github.com/tedalcorn/dogs/blob/main/dogage.jpg" alt="Dog Age Distribution">
-        <img src="https://github.com/tedalcorn/dogs/blob/main/topbreeds.jpg" alt="Top Breeds">
-        <img src="https://github.com/tedalcorn/dogs/blob/main/topnames.jpg" alt="Top Names">
+        <img src="https://raw.githubusercontent.com/tedalcorn/dogs/main/daysinshelter.jpg" alt="Days in Shelter">
+        <img src="https://raw.githubusercontent.com/tedalcorn/dogs/main/dogage.jpg" alt="Dog Age Distribution">
+        <img src="https://raw.githubusercontent.com/tedalcorn/dogs/main/topbreeds.jpg" alt="Top Breeds">
+        <img src="https://raw.githubusercontent.com/tedalcorn/dogs/main/topnames.jpg" alt="Top Names">
       </div>
     </div>
   </body>
