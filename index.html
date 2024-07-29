@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dogs in New Mexico Looking for Forever Homes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      iframe {
+        margin-top: 20px;
+        border: none;
+      }
+      .map-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+      ul {
+        margin-bottom: 20px;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dogs in New Mexico Looking for Forever Homes</h1>
+    </header>
+    <div class="container">
+      <p>This month I was in the process of adopting a dog and I decided to build a data-set of dogs available for adoption.</p>
+      
+      <p>I found a website <a href="http://www.24petsconnect.com">www.24petsconnect.com</a> that appears to work with many animal shelters across the country to advertise their pets.</p>
+      
+      <p>After exploring their website, I created a browser automation to enter a zip code and pull the subdirectories of nearby shelters.</p>
+      
+      <p>In part to confine my search, I fed this a list of zip codes in New Mexico, my home state. (I had a list of 379 zip codes there, but other websites indicate there are 427, so I may have missed a few). After dropping duplicated shelters that registered as proximate to multiple zip codes, this yielded 76 shelters.</p>
+      
+      <p>At the subdirectory for each shelter, up to 30 pets are listed per page, with each pet’s ad connected to a detailed page with more information about the pet.</p>
+      
+      <p>I built functions to scrape each page, visiting each pet’s “detail” page to scrape information there too, moving through each page pertaining to the shelter until they were exhausted.</p>
+      
+      <p>Then I wrote some code to clean the scraped data and produce some descriptive statistics about the group as a whole.</p>
+      
+      <p><b>Findings:</b></p>
+      <ul>
+        <li>At present, there are 4,478 dogs available for adoption in New Mexico listed via 24petsconnect.com.</li>
+        <li>The male/female ratio is roughly even (0.95:1).</li>
+        <li>Of dogs with known and stated breed, German Shepherd Dog mix and German Shepherd Dog are the most common, followed by American Pit Bull Terrier Mix.</li>
+        <li>The most popular names assigned by shelters are Luna (18 dogs), Rocky (16 dogs), and Buddy (13 dogs).</li>
+        <li>The most common age-range for dogs is 3-6 months.</li>
+        <li>Most dogs have been in the shelter less than 50 days. There are some extreme outliers (in shelter more than 3 years) but that may be due to lack of updating by the shelter.</li>
+      </ul>
+      
+      <!-- Replace with actual image URL -->
+      <img src="IMAGE_URL_HERE" alt="Description of the image">
+      
+      <p>I will provide some image files shortly.</p>
+      
+      <!-- Replace with actual Python file link -->
+      <p>Here is the Python file used for scraping and cleaning the data: <b><a href="PYTHON_FILE_LINK_HERE">See Python file</a></b></p>
+      
+      <!-- Add title above the iframe -->
+      <div class="map-title">Map and Statistics of Dogs Available for Adoption</div>
+      
+      <!-- Replace with actual iframe source if needed -->
+      <iframe width='100%' height='600px' src="MAP_OR_STATISTICS_URL_HERE" title="Map and Statistics"></iframe>
+    </div>
+  </body>
+</html>
